@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Gotham Rounded Book";
+    src: url("font/GothamRoundedBook_21018.ttf")
+}
+
+@font-face {
+    font-family: "Gotham Rounded Medium";
+    src: url("font/GothamRoundedMedium_21022.ttf");
+}
+
+
+/*--------------------GENERAL-----------------------*/
+
+* {
+    font-family: "Gotham Rounded Medium", serif, "Times New Roman"
+}
+
+body {
+    /*    width: 1600px;*/
+    width: 100%;
+    margin: 0;
+}
+
+
+/*-------------------ALL-SECTION-HEADERS----------------------*/
+
+section header {
+    text-align: center;
+}
+
+section header h2 {
+    margin: 0;
+    font-size: 15px;
+    color: #353535;
+    letter-spacing: 3px;
+    padding-top: 108px;
+}
+
+section .separate {
+    margin-top: 25px
+}
+
+section .down-arow {
+    margin: 0 34px 0 34px;
+}
+
+section .separate .dot {
+    margin-bottom: 4px;
+}
+
+
+/*------------------------JUMBOTRON-----------------------*/
+
+#jumbotron {
+    /*    width: 1600px;*/
+    height: 802px;
+    background-image: url(image/header.png);
+    /*    background-position: 0 0;*/
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#jumbotron h1 {
+    font-family: "Gotham Rounded Book", serif, "Times New Roman";
+    font-size: 40px;
+    color: #353535;
+    font-weight: 100;
+    letter-spacing: 19px;
+    margin: 0 0 31px 0;
+}
+
+#jumbotron h1 .grey {
+    color: #a1a9b0;
+    font-size: 40px;
+}
+
+#jumbotron span {
+    color: #8c9398;
+    font-family: "Gotham Rounded Book", serif, "Times New Roman";
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+#jumbotron span .em {
+    font-style: italic;
+    font-weight: 600
+}
+
+#jumbotron #btn-learn-more {
+    background-color: #3dc9b3;
+    border: none;
+    border-bottom: 5px solid #309383;
+    width: 201px;
+    height: 65px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-top: 65px;
+    padding: 0;
+}
+
+#jumbotron div {
+    padding-top: 253px;
+}
+
+
+/*-----------------------INTRO-----------------------*/
+
+#intro {
+    height: 488px;
+    text-align: center;
+    background-color: #f3f5f8;
+    box-sizing: border-box;
+}
+
+#intro p {
+    margin: 63px 0 0;
+    font-size: 14px;
+    color: #8c9398;
+    line-height: 25px;
+}
+
+#intro p .black {
+    color: #353535;
+}
+
+
+/*---------------------------SERVICES-GENERIC------------------*/
+
+#services-generic {
+    height: 730px;
+    text-align: center;
+}
+
+#services-generic .service {
+    width: 390px;
+    float: left;
+    margin: 85px 29px;
+}
+
+.service header h3 {
+    font-size: 15px;
+    color: #353535;
+    letter-spacing: 1px;
+    margin: 49px 0 0;
+}
+
+.service p {
+    color: #8c9398;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.service .sep {
+    margin: 29px 0 10px;
+}
+
+
+/*-----------------------------SERVICES-IPHONE-----------------------*/
+
+#services-iphone {
+    height: 702px;
+    background: url(image/service_iphone.png) -45px 0;
+}
+
+#services-iphone header h2 {
+    padding-top: 134px
+}
+
+#services-iphone .right {
+    background-color: #ffffff;
+    width: 580px;
+    height: 702px;
+    float: right;
+}
+
+#services-iphone .right p {
+    text-align: justify;
+    font-size: 14px;
+    margin: 40px 59px 0 60px;
+    color: #8c9398;
+    line-height: 1.5;
+}
+
+.nipple-container {
+    margin: 132px auto;
+    height: 9px;
+    width: 60px;
+}
+
+.nipple {
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    border: 2px solid #c9cbca;
+    float: left;
+    margin-right: 7px;
+}
+
+.nipple:first-child {
+    background-color: #212024;
+}
