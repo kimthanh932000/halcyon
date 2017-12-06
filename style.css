@@ -19,6 +19,8 @@ body {
     /*    width: 1600px;*/
     width: 100%;
     margin: 0;
+    font-size: 14px;
+    color: #8c9398;
 }
 
 
@@ -162,6 +164,7 @@ section .separate .dot {
 #services-iphone {
     height: 702px;
     background: url(image/service_iphone.png) -45px 0;
+    position: relative;
 }
 
 #services-iphone header h2 {
@@ -172,7 +175,9 @@ section .separate .dot {
     background-color: #ffffff;
     width: 580px;
     height: 702px;
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #services-iphone .right p {
@@ -184,7 +189,7 @@ section .separate .dot {
 }
 
 .nipple-container {
-    margin: 132px auto;
+    margin: 132px auto 0;
     height: 9px;
     width: 60px;
 }
@@ -200,4 +205,123 @@ section .separate .dot {
 
 .nipple:first-child {
     background-color: #212024;
+}
+
+
+/*---------------------------COUNTER----------------------*/
+
+#counter {
+    height: 301px;
+    background: url(image/counter.png) -100px -370px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+    letter-spacing: 9px;
+}
+
+#counter h2 {
+    font-size: 40px;
+    font-family: "Gotham Rounded Book", serif, "Times New Roman";
+    font-weight: 100;
+    margin: 0;
+}
+
+#counter h3 {
+    font-family: "Gotham Rounded Book", serif, "Times New Roman";
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0;
+    line-height: 3.5;
+}
+
+#counter .em {
+    font-style: italic;
+}
+
+#counter .blue-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #3dc9b3;
+    margin: 0 auto;
+    position: relative;
+}
+
+#counter img {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+
+/*--------------------------PORTFOLIO--------------------------*/
+
+#portfolio-section {
+    height: 660px;
+    padding-top: 103px;
+    box-sizing: border-box;
+}
+
+.portfolio {
+    width: 360px;
+    float: left;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.portfolio h3 {
+    font-size: 15px;
+    color: #353535;
+    letter-spacing: 1px;
+    margin: 49px 0 0;
+}
+
+.portfolio p {
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+#portfolio-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#portfolio-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#portfolio-section .nipple-container {
+    margin-top: 72px;
+}
+
+
+/*---------------------------IGNITE--------------------*/
+
+#ignite {
+    height: 200px;
+    background-color: #242830;
+    text-align: center;
+    position: relative;
+}
+
+.ignite-box {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.ignite-box h2 {
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    line-height: 80px;
+    margin: 0;
+    font-weight: 100;
 }
