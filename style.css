@@ -59,7 +59,9 @@ section .separate .dot {
     clear: both;
 }
 
+
 /*-------------------------SOCIAL---------------------*/
+
 .social {
     width: 165px;
     margin: 25px auto 0;
@@ -87,6 +89,8 @@ section .separate .dot {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
+
+
 /*------------------------JUMBOTRON-----------------------*/
 
 #jumbotron {
@@ -461,5 +465,58 @@ input[type=submit] {
     height: 154px;
     background-color: #ffffff;
     float: left;
-    margin: 0 15px;
+    margin: 92px 15px 75px;
+    text-align: center;
+}
+
+.contact-box:hover span {
+    color: #242830;
+}
+
+.contact-box img {
+    padding: 25px 0 0;
+}
+
+.contact-box h3 {
+    color: #3dc9b3;
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+/*----------------------------------FOOTER---------------
+*/
+
+footer {
+    height: 120px;
+    background-color: #242830;
+}
+
+footer a {
+    font-family: "Gotham Rounded Book", serif, "Times New Roman";
+    font-size: 14px;
+    line-height: 120px;
+    text-decoration: none;
+    color: #6a7076;
+}
+
+footer .left {
+    float: left;
+    margin-left: 130px;
+}
+
+footer .right {
+    font-family: "Gotham Rounded Book", serif, "Times New Roman";
+    float: right;
+    margin: 0 130px;
+    color: #ffffff;
+}
+
+footer .vertical-line {
+    margin: 0 5px;
+}
+
+footer .right .em {
+    font-style: italic;
 }
