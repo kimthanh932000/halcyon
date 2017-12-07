@@ -51,6 +51,42 @@ section .separate .dot {
 }
 
 
+/*------------------------------CLEAR-FLOAT---------------*/
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-------------------------SOCIAL---------------------*/
+.social {
+    width: 165px;
+    margin: 25px auto 0;
+}
+
+.blue-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #3dc9b3;
+    float: left;
+    position: relative;
+    margin: 0 5px;
+    background-color: #242830;
+}
+
+.blue-circle:hover {
+    background-color: #3dc9b3;
+    cursor: pointer;
+}
+
+.blue-circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
 /*------------------------JUMBOTRON-----------------------*/
 
 #jumbotron {
@@ -109,33 +145,33 @@ section .separate .dot {
 
 /*-----------------------INTRO-----------------------*/
 
-#intro {
+#intro-section {
     height: 488px;
     text-align: center;
     background-color: #f3f5f8;
     box-sizing: border-box;
 }
 
-#intro p {
+#intro-section p {
     margin: 63px 0 0;
     font-size: 14px;
     color: #8c9398;
     line-height: 25px;
 }
 
-#intro p .black {
+#intro-section p .black {
     color: #353535;
 }
 
 
 /*---------------------------SERVICES-GENERIC------------------*/
 
-#services-generic {
+#services-generic-section {
     height: 730px;
     text-align: center;
 }
 
-#services-generic .service {
+#services-generic-section .service {
     width: 390px;
     float: left;
     margin: 85px 29px;
@@ -161,17 +197,17 @@ section .separate .dot {
 
 /*-----------------------------SERVICES-IPHONE-----------------------*/
 
-#services-iphone {
+#services-iphone-section {
     height: 702px;
     background: url(image/service_iphone.png) -45px 0;
     position: relative;
 }
 
-#services-iphone header h2 {
+#services-iphone-section header h2 {
     padding-top: 134px
 }
 
-#services-iphone .right {
+#services-iphone-section .right {
     background-color: #ffffff;
     width: 580px;
     height: 702px;
@@ -180,13 +216,16 @@ section .separate .dot {
     right: 0;
 }
 
-#services-iphone .right p {
+#services-iphone-section .right p {
     text-align: justify;
     font-size: 14px;
     margin: 40px 59px 0 60px;
     color: #8c9398;
     line-height: 1.5;
 }
+
+
+/*-------------------------------NIPPLES------------------*/
 
 .nipple-container {
     margin: 132px auto 0;
@@ -203,14 +242,15 @@ section .separate .dot {
     margin-right: 7px;
 }
 
-.nipple:first-child {
+.nipple:hover {
     background-color: #212024;
+    cursor: pointer
 }
 
 
 /*---------------------------COUNTER----------------------*/
 
-#counter {
+#counter-section {
     height: 301px;
     background: url(image/counter.png) -100px -370px;
     color: #ffffff;
@@ -220,14 +260,14 @@ section .separate .dot {
     letter-spacing: 9px;
 }
 
-#counter h2 {
+#counter-section h2 {
     font-size: 40px;
     font-family: "Gotham Rounded Book", serif, "Times New Roman";
     font-weight: 100;
     margin: 0;
 }
 
-#counter h3 {
+#counter-section h3 {
     font-family: "Gotham Rounded Book", serif, "Times New Roman";
     font-size: 25px;
     font-weight: 100;
@@ -235,23 +275,25 @@ section .separate .dot {
     line-height: 3.5;
 }
 
-#counter .em {
+#counter-section .em {
     font-style: italic;
 }
 
-#counter .blue-circle {
+#counter-section .blue-circle {
     width: 45px;
     height: 45px;
     border-radius: 100%;
     background-color: #3dc9b3;
     margin: 0 auto;
     position: relative;
+    float: none;
 }
 
-#counter img {
+#counter-section img {
     position: absolute;
-    top: 40%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
 }
 
 
@@ -287,12 +329,6 @@ section .separate .dot {
     margin: 0 auto;
 }
 
-#portfolio-container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 #portfolio-section .nipple-container {
     margin-top: 72px;
 }
@@ -300,7 +336,7 @@ section .separate .dot {
 
 /*---------------------------IGNITE--------------------*/
 
-#ignite {
+#ignite-section {
     height: 200px;
     background-color: #242830;
     text-align: center;
@@ -324,4 +360,106 @@ section .separate .dot {
     line-height: 80px;
     margin: 0;
     font-weight: 100;
+}
+
+
+/*--------------------------TEAM----------------------*/
+
+#team-section {
+    height: 880px;
+    /*    padding-top: 103px;*/
+    box-sizing: border-box;
+}
+
+.team-member {
+    width: 360px;
+    float: left;
+    margin: 60px 15px 0;
+    text-align: center;
+}
+
+.team-member h3 {
+    font-size: 15px;
+    color: #353535;
+    letter-spacing: 1px;
+    margin: 49px 0 0;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.team-member p {
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+#team-containber {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#team-section .nipple-container {
+    margin-top: 88px;
+}
+
+
+/*-----------------------------SUBSCRIBE---------------------*/
+
+#subscribe-section {
+    height: 450px;
+    background: url(image/subscribe.png) 0 -480px;
+    text-align: center;
+}
+
+#subscribe-section header {
+    padding-top: 120px;
+    margin-bottom: 43px;
+}
+
+#subscribe-section header h2 {
+    color: #ffffff;
+    padding: 0;
+    margin-top: 22px;
+    font-weight: 100;
+}
+
+input[name=email] {
+    width: 355px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 0;
+    outline: none;
+    color: #ffffff;
+}
+
+input[type=submit] {
+    width: 100px;
+    height: 72px;
+    background-color: #3dc9b3;
+    color: #ffffff;
+    border: 1px solid #3dc9b3;
+    padding: 0;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+
+/*-------------------------CONTACT---------------*/
+
+#contact-section {
+    height: 673px;
+    background: url(image/footer.png)0 -100px;
+}
+
+#contact-group {
+    width: 1176px;
+    margin: 0 auto;
+}
+
+.contact-box {
+    width: 362px;
+    height: 154px;
+    background-color: #ffffff;
+    float: left;
+    margin: 0 15px;
 }
